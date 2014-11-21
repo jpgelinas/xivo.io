@@ -64,3 +64,14 @@ if (window.analytics.included) {
   // move this call however you'd like.
 
 } window.analytics.page();
+
+var dxi = document.getElementById('download-xivo-iso');
+var dxc = document.getElementById('download-xivo-client');
+
+analytics.trackLink(dxi, 'Clicked download ISO Link', { plan: 'Developer' ,
+                                                        integrations: { 'Google Analytics': true }
+});
+
+analytics.trackLink(dxc, 'Clicked download Client Link', { plan: 'Developer' ,
+                                                        integrations: { 'Google Analytics': true }
+});
