@@ -68,10 +68,10 @@ if (window.analytics.included) {
 var dxi = document.getElementById('download-xivo-iso');
 var dxc = document.getElementById('download-xivo-client');
 
-analytics.trackLink(dxi, 'Clicked download ISO Link', { plan: 'Developer' ,
+window.analytics.trackLink(dxi, 'Clicked download ISO Link', { plan: 'Developer' ,
                                                         integrations: { 'Google Analytics': true }
 });
 
-analytics.trackLink(dxc, 'Clicked download Client Link', { plan: 'Developer' ,
-                                                        integrations: { 'Google Analytics': true }
+window.analytics.trackLink(dxc, 'Clicked download Client Link', { plan: 'Developer' ,
+                                                           integrations: { 'Google Analytics': true }
 });
